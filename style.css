@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap');
+
+/* UNIVERSAL STYLES */
+* {
+    font-family: 'Hanken Grotesk', 'Times New Roman';
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+}
+
+/* Navbar Styles */
+nav {
+    background-color: #FCEDDA;
+    box-shadow: 0 2px 10px black;
+    width: 100%;
+    position: fixed;
+}
+
+nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+nav .container h1{
+    margin-left: 15px;
+}
+
+nav .container ul{
+    margin-bottom: 0;
+}
+
+nav .container .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav .container .menu li {
+    margin: 0 10px;
+}
+
+nav .container .menu li a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: black;
+}
+
+nav .container .menu li a:hover{
+    color: #EE4E34;
+}
+
+/* Add/Delete Element Section Styles */
+
+.element{
+    background: #EE4E34;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.element .info{
+    margin-top: 200px;
+    background: #EE4E34;
+}
+
+.element .rowOne{
+    margin-bottom: 50px;
+    background: #EE4E34;
+}
+
+.element .rowTwo{
+    margin-bottom: 25px;
+    background: #EE4E34;
+}
+
+.element .container{
+    background: #EE4E34;
+}
+
+.element button{
+    margin-top: 20px;
+    padding: 10px 12px;
+    cursor: pointer;
+}
+
+/* Upload SDF Section Styles */
+
+.sdf{
+    background: #EE4E34;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.sdf button{
+    margin-top: 20px;
+    padding: 10px 12px;
+    cursor: pointer;
+}
+
+/* Select Molecule Section Style */
+.select{
+    background: #EE4E34;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.select .select-container{
+    margin-top: 120px;
+}
+
+.select .table{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.select .table .tableRow{
+    width: 500px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    margin-bottom: 25px;
+}
+.select .table .tableRow p{    
+    display: inline;
+}
+
+.select .table .tableRow:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+
+/* Display Molecule Section Styles */
+
+.display{
+    background: #EE4E34;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.display .display-container{
+    margin-top: 120px;
+}

@@ -1,0 +1,76 @@
+<html>
+
+    <head>
+        <title> File Upload </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <nav>
+            <div class="container">
+                <h1>Molecule Viewer</h1>
+                <ul class="menu">
+                    <li><a href="index.html">Add Element</a></li>
+                    <li><a href="sdfUpload.html">Upload SDF</a></li>
+                    <li><a href="select.html">Select Mol</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="element" id="element">
+            <div class="info">
+                <h2>Add Element</h2>
+
+                <p>Add an element to the system by specifying the element number,
+                element code, element name, 3 colour values, and radius of an element.</p>
+                <p>Enter colours as hex values.</p>
+            </div>
+            <div class="container">
+                <form id="elementForm" action="elementHandler" enctype="multipart/form-data" method="post">
+                    <div class="rowOne">
+                        <label for="">Element #: </label>
+                        <input id="elementNum" type="number">
+
+                        <label for="">Element Code: </label>
+                        <input id="elementCode" type="text">
+
+                        <label for="">Element Name: </label>
+                        <input id="elementName" type="text">
+                    </div>
+
+                    <div class="rowTwo">
+                        <label for="">Colour #1: </label>
+                        <input id="colOne" type="color" value="#FF0000">
+
+                        <label for="">Colour #2: </label>
+                        <input id="colTwo" type="color" value="#00FF00">
+
+                        <label for="">Colour #3: </label>
+                        <input id="colThree" type="color" value="#0000FF">
+
+                        <label for="">Radius : </label>
+                        <input id="radius" type="number">
+                    </div>
+
+                    <button id="addElementBtn">Add Element</button>
+                </form>
+
+                <form id="rmvElementForm" action="rmvElementHandler" enctype="multipart/form-data">
+                    <div>
+                        <h2>Delete Element</h2>
+                        <p>Enter the name of the Element you would like to delete</p>
+                        <label for="">Element: </label>
+                        <input id="rmvElement" type="text">
+                    </div>
+                    
+                    <button id="deleteElementBtn">Delete Element</button>
+                </form>
+            </div>
+
+
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title> File Upload </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="sdf.js"></script>
+    </head>
+
+    <body>
+        <nav>
+            <div class="container">
+                <h1>Molecule Viewer</h1>
+                <ul class="menu">
+                    <li><a href="index.html">Add Element</a></li>
+                    <li><a href="sdfUpload.html">Upload SDF</a></li>
+                    <li><a href="select.html">Select Mol</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="sdf" id="sdf">
+            <h2>Upload SDF</h2>
+            <p>Upload a SDF file to the system. Assign the molecule a name as well.</p>
+            <form id="uploadForm" action="sdfUpload.html" enctype="multipart/form-data" method="post">
+                <input type="file" id="sdf-file" name="sdf-file"/>
+                <label >Molecule Name: </label>
+                <input type="text" id="mol-name" name="mol-name"/>
+                <button id="upload">Upload</button>
+            </form>
+        </div>
+    </body>
+</html>
